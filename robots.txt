@@ -1,4 +1,9 @@
 User-agent: *
-Disallow:
+Disallow: /assets/
+Disallow: /scripts/
 
+# Allow specific sections for indexing
+Allow: /
+
+# Sitemap location
 Sitemap: https://dianeleblancalbarel.github.io/sitemap.xml
