@@ -3,59 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="26b658bc1fa0f" />
     <title>Diane Leblanc-Albarel - Researcher in Cryptography</title>
     <meta name="description" content="Official page of Diane Leblanc-Albarel, a researcher in cryptography and cybersecurity affiliated with KU Leuven. Discover her research, publications, and contributions to the field of cybersecurity.">
-    <meta name="keywords" content="Diane Leblanc-Albarel, perceptual hash function, chatcontrol, cryptography, cybersecurity, researcher, KU Leuven, cryptanalysis, computer security, scientific research, cryptography publications">
+    <meta name="keywords" content="Diane Leblanc-Albarel, cryptography, cybersecurity, researcher, KU Leuven, cryptanalysis, computer security, scientific research">
 
-    <!-- Automatic redirection with delay -->
-    <meta http-equiv="refresh" content="1;url=https://www.esat.kuleuven.be/cosic/people/person/?u=u0167412">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
 
-    <!-- Open Graph Metadata for social sharing -->
-    <meta property="og:title" content="Diane Leblanc-Albarel - Researcher in Cryptography">
-    <meta property="og:description" content="Official page of Diane Leblanc-Albarel, a researcher in cryptography and cybersecurity affiliated with KU Leuven. Discover her research, publications, and contributions to the field of cybersecurity.">
-    <meta property="og:url" content="https://dianeleblancalbarel.github.io/">
-    <meta property="og:type" content="website">
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://www.esat.kuleuven.be/cosic/people/person/?u=u0167412">
-
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Diane Leblanc-Albarel",
-      "jobTitle": "Researcher in Cryptography and Cybersecurity",
-      "affiliation": {
-        "@type": "Organization",
-        "name": "KU Leuven"
-      },
-      "url": "https://dianeleblancalbarel.github.io",
-      "sameAs": [
-        "https://www.linkedin.com/in/dianeleblancalbarel/",
-        "https://scholar.google.com/citations?hl=en&user=-a0lMSwAAAAJ",
-        "https://www.researchgate.net/profile/Diane-Leblanc-Albarel"
-      ]
-    }
+    <script>
+        function openTab(evt, tabName) {
+            const tabs = document.querySelectorAll('.tab-content');
+            const buttons = document.querySelectorAll('.tab-buttons button');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            buttons.forEach(btn => btn.classList.remove('active'));
+            document.getElementById(tabName).classList.add('active');
+            evt.currentTarget.classList.add('active');
+        }
     </script>
 </head>
 <body>
-    <h1>Diane Leblanc-Albarel - Researcher in Cryptography and Cybersecurity</h1>
-    <p>Welcome to the official page of Diane Leblanc-Albarel. You will be redirected to her main profile where you can find detailed information about her research, publications, and scientific contributions.</p>
-    
-    <p>Recent publications:</p>
-    <ul>
-        <li><a href="https://eprint.iacr.org/2024/1869">Black-box Collision Attacks on the NeuralHash Perceptual Hash Function</a> - Perceptual Hash Function</li>
-        <li><a href="https://link.springer.com/chapter/10.1007/978-3-031-68385-5_7">Time-Memory Trade-Offs Sound the Death Knell for GPRS and GSM</a> - Time-Memory Trade-Offs</li>
-    </ul>
+    <header>
+        <h1>Diane Leblanc-Albarel</h1>
+        <p>Post-doctoral researcher in cryptography, cryptanalysis, and cybersecurity at KU Leuven in the COSIC team</p>
+    </header>
 
-    <img src="assets/newPhoto.png" alt="Photo of Diane Leblanc-Albarel" style="max-width: 200px; height: auto;" />
+    <div class="main-container">
+        <!-- Left Column: Contact and Publications -->
+        <div class="left-column">
+            <h2>Contact</h2>
+            <ul>
+                <li>Email: <span id="email">diane[dot]leblanc-albarel[at]kuleuven[dot]be</span></li>
+                <li><a href="https://scholar.google.com/citations?hl=en&user=-a0lMSwAAAAJ">Google Scholar</a></li>
+                <li><a href="https://orcid.org/0000-0000-0000-0000">ORCID</a></li>
+            </ul>
 
-    <p>If the redirection does not work, <a href="https://www.esat.kuleuven.be/cosic/people/person/?u=u0167412">click here</a>.</p>
+            <h2>Recent Publications</h2>
+            <ul>
+                <li><a href="https://eprint.iacr.org/2024/1869">Black-box Collision Attacks on the NeuralHash Perceptual Hash Function</a></li>
+                <li><a href="https://link.springer.com/chapter/10.1007/978-3-031-68385-5_7">Time-Memory Trade-Offs Sound the Death Knell for GPRS and GSM</a></li>
+            </ul>
+        </div>
 
-    <noscript>
-        <p>If you are not automatically redirected, <a href="https://www.esat.kuleuven.be/cosic/people/person/?u=u0167412">click here</a>.</p>
-    </noscript>
+        <!-- Right Column: Main Content -->
+        <div class="right-column">
+            <img src="assets/newPhoto.png" alt="Photo of Diane Leblanc-Albarel" class="profile-photo">
+
+            <h2>About</h2>
+            <p>Since November 2023, I have been a postdoctoral researcher in the COSIC group at KU Leuven. My research currently focuses on:</p>
+            <ul>
+                <li><span class="highlight">Perceptual hash functions</span>, which are used to identify similar but not identical media, such as detecting copyright violations or tracking child sexual abuse material.</li>
+                <li><span class="highlight">Time-Memory Trade-Off (TMTO) attacks</span>, expanding on my PhD research to generalize TMTO techniques beyond Rainbow Tables.</li>
+                <li><span class="highlight">Authentication protocols and Password Manager protocols</span>, with an emphasis on improving their security and efficiency.</li>
+            </ul>
+
+            <div class="tabs">
+                <div class="tab-buttons">
+                    <button class="active" onclick="openTab(event, 'Main')">Main</button>
+                    <button onclick="openTab(event, 'OtherWorks')">Other Works and Events</button>
+                    <button onclick="openTab(event, 'PreviousPositions')">Previous Positions</button>
+                </div>
+                <div id="Main" class="tab-content active">
+                    <h3>My latest presentation about the European ChatControl regulation proposal:</h3>
+                    <p><a href="https://dianeleblancalbarel.github.io/presentation/GDR_SHS_CSAM.pdf">View the slides</a></p>
+
+                    <h3>For more information about ChatControl:</h3>
+                    <p><a href="https://chatcontrol.eu">Visit ChatControl.eu</a></p>
+
+                    <h3>Learn more about my research:</h3>
+                    <p><a href="https://www.esat.kuleuven.be/cosic/people/person/?u=u0167412">My KU Leuven Profile</a></p>
+                </div>
+                <div id="OtherWorks" class="tab-content">
+                    <h2>Other Works and Events</h2>
+                    <h3>Outreach Activities:</h3>
+                    <ul>
+                        <li><strong>Co-Author of a Book Chapter (in French):</strong>
+                            <ul>
+                                <li><span class="highlight">Chapter Title:</span> Les mots de passe à bout de souffle ("The Password: At the End of Its Tether")</li>
+                                <li><span class="highlight">Book Title:</span> Le Calcul à Découvert</li>
+                                <li><span class="highlight">Authors:</span> Gildas Avoine, Diane Leblanc-Albarel</li>
+                            </ul>
+                        </li>
+                        <li><strong>Press Article (in French):</strong>
+                            <ul>
+                                <li><span class="highlight">Title:</span> "How to choose a good password" (in French: "Comment choisir un bon mot de passe ?")</li>
+                                <li><span class="highlight">Authors:</span> Gildas Avoine, Diane Leblanc-Albarel</li>
+                                <li><span class="highlight">Journal:</span> The Conversation</li>
+                                <li><a href="https://theconversation.com/comment-choisir-un-bon-mot-de-passe-196852">Read the article</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h3>Promoting Inclusion in Science:</h3>
+                    <p>Inclusion of women in science is an important question for me. To contribute to this cause:</p>
+                    <ul>
+                        <li>I am co-organizing a <span class="highlight">book circle</span> for the IEEE Women in Engineering group at KU Leuven.
+                            <ul>
+                                <li><span class="highlight">Purpose:</span> A reading circle for young researchers to explore books on feminist topics in Computer Science, share thoughts, and exchange experiences. The goal is to learn collectively and foster discussions in a supportive space.</li>
+                            </ul>
+                        </li>
+                        <li>I participated in the <span class="highlight">L Codent, L Créent Program (2020–2021)</span>, conducting 20 hours of workshops teaching Python to middle school girls in Rennes. This initiative aimed to promote STEM careers and programming skills among young girls.</li>
+                    </ul>
+                </div>
+                <div id="PreviousPositions" class="tab-content">
+                    <h2>Previous Positions</h2>
+                    <p>I completed my PhD in October 2023 under the supervision of Gildas Avoine in the SPICY team at IRISA, Rennes. My PhD research was primarily centered on <span class="highlight">Time-Memory Trade-Off (TMTO) attacks</span>, with a particular focus on the <span class="highlight">Rainbow Tables</span> variant.</p>
+                    <p><span class="highlight">TMTOs</span> are cryptographic techniques that balance computational costs and storage requirements to optimize certain types of attacks, such as password recovery or cipher key retrieval. My work included:</p>
+                    <ul>
+                        <li><span class="highlight">Accelerating</span> the precomputation phase of Rainbow Tables.</li>
+                        <li><span class="highlight">Proposing new variants</span> of Rainbow Tables algorithms that provide better trade-offs between attack success rates and resource consumption.</li>
+                        <li><span class="highlight">Demonstrating the limits</span> of TMTO attacks on both CPU and GPU architectures.</li>
+                        <li><span class="highlight">Applying Rainbow Tables</span> to analyze the security of communication ciphers and password managers.</li>
+                    </ul>
+                    <p>Before my PhD, I graduated with a degree in <span class="highlight">Mathematical Engineering</span> from INSA Rouen Normandie and a <span class="highlight">Master 2 in Information Systems Security</span> from the University of Rouen Normandie.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Diane Leblanc-Albarel. All rights reserved.</p>
+    </footer>
 </body>
-</html>
